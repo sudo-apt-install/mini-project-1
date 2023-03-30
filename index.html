@@ -4,36 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My New Website</title>
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
   <body>
     <header>
-        <nav class="nav" id="nav-links">
-            <ul>
-              <li>Github</li>
-              <li>Portfolio</li>
-              <li>Contact</li>
-            </ul>
-          </nav>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Github</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="content">
-        <h1>My New Website</h1>
-        <figure class="main-image"> <img src="https://placebear.com/640/360" alt=""></figure>
-        <section class="contact">
-            <form action="action_page.php">
+      <h1>My New Website</h1>
+      <figure class="main-image">
+        <img src="https://placebear.com/640/360" alt="A placeholder image" />
+      </figure>
+      <section class="contact">
+        <form action="action_page.php">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name.." />
 
-                <label for="fname">Name: </label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        
-                <label for="lname">Email: </label>
-                <input type="text" id="lname" name="lastname" placeholder="Email">
-        </section>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email.."
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write something.."
+          ></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
     </main>
-    <footer>
-        © My new website inc
-    </footer>
+
+    <footer>&copy; My New Website Inc.</footer>
   </body>
 </html>
