@@ -4,51 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My New Website</title>
+    <title>My new website</title>
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <header>
-      <nav class="nav">
-        <ul>
-          <li><a href="#">Github</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li>GitHub</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <h1>桐谷 諒 (Ryo Kiritani)</h1>
     </header>
 
-    <main class="content">
-      <h1>My New Website</h1>
-      <figure class="main-image">
-        <img src="https://placebear.com/640/360" alt="A placeholder image" />
-      </figure>
-      <section class="contact">
-        <form action="action_page.php">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Your name.." />
-
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your email.."
-          />
-
-          <label for="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Write something.."
-          ></textarea>
-
-          <button type="submit">Send</button>
-        </form>
+    <main class="main">
+      <section>
+        <figure class="main-image">
+          <img src="./assets/Yoru.jpg" alt="" />
+        </figure>
+      </section>
+      <section>
+        <p id="quote">"I'll fight anybody. I'll fight everybody."</p>
+      </section>
+      <div>
+        <h2>Contact Me</h2>
+      </div>
+      <section class="contact-form">
+        <form action="/action_page.php">
+          <label for="fname">Name: </label>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">Email: </label>
+          <input type="text" id="email" name="email"><br><br>
+          <input type="submit" value="Submit">
+        </form> 
       </section>
     </main>
-
-    <footer>&copy; My New Website Inc.</footer>
   </body>
+
+  <footer class="footer">©Tired black man Inc.</footer>
 </html>
